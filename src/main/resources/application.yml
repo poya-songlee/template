@@ -4,3 +4,17 @@ server:
 spring:
   application:
     name: template
+
+logging:
+  level:
+    p6spy: DEBUG
+
+# p6spy
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true
+      multiline: true
+      logging: slf4j
+      tracing:
+        include-parameter-values: true
